@@ -1,0 +1,4 @@
+use mta;
+create table ccdmfilter (time FLOAT,   CCSDSTMF CHAR,       COBSRQID BIGINT,       COGEOMTR CHAR,       SCIINS CHAR, 3FAPOS FLOAT, 4HPOSARO FLOAT,       4LPOSARO FLOAT,       GRATING CHAR, AOPCADMD CHAR,       CORADMEN CHAR);
+load data local infile '/data/mta/DataSeeker/data/repository/ccdmfilter.rdb' into table ccdmfilter fields terminated by '\t' lines terminated by '\n';
+show table status;
